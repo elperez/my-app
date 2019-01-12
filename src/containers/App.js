@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Radium, {StyleRoot} from 'radium';
-import Person from './Person/Person';
+import Person from '../components/Persons/Person';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 
 
@@ -106,7 +106,7 @@ class App extends Component {
         <div className="App">
           <h1>Hello World!</h1>
           <p className={classes.join(' ')}>This is working.</p>
-          <button 
+          <button
             style={style}
             onClick={this.togglePersonsHandler}>Toggle Persons</button>
           {persons}
